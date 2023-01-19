@@ -38,15 +38,11 @@ def buttons():
 def cards():
     return render_template('cards.html')
 
-
-
-
-
 # Utilities    
 @app.route('/utilities-animation')
 def animations():
     return render_template('utilities-animation.html')
-
+""" 
 @app.route('/utilities-border')
 def borders():
     return render_template('utilities-border.html')
@@ -57,8 +53,7 @@ def color():
 
 @app.route('/utilities-other')
 def animations():
-    return render_template('utilities-other.html')
-
+    return render_template('utilities-other.html') """
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -6,9 +6,6 @@ app = Flask(__name__, template_folder='templates')
 def index():
     return render_template('index.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 # Login - Register - Forgot Pass
 @app.route('/login')
 def login():
@@ -63,4 +60,5 @@ def animations():
     return render_template('utilities-other.html')
 
 
-
+if __name__ == '__main__':
+    app.run(debug=True)

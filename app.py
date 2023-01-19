@@ -17,7 +17,7 @@ def register():
 
 @app.route('/forgot-password')
 def forgotpass():
-    return render_template('forgot-password')    
+    return render_template('forgot-password.html')    
 
 # Error
 @app.route('/404')
@@ -42,6 +42,7 @@ def cards():
 @app.route('/utilities-animation')
 def animations():
     return render_template('utilities-animation.html')
+    
 """ 
 @app.route('/utilities-border')
 def borders():

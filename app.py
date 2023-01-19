@@ -8,6 +8,7 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 
+# Login - Register - Forgot Pass
 @app.route('/login')
 def login():
     return render_template('login.html')
@@ -16,15 +17,17 @@ def login():
 def register():
     return render_template('register.html')
 
-@app.route('/page/<string:page_name>')
-def render_static(page_name):
-    return render_template('%s.html' % page_name)
+def forgotpass():
+    return render_template('forgot-password.html')    
 
-def charts():
-    return render_template('charts.html')
-
+# Error
 def Error404():
     return render_template('404.html')
+
+
+# Charts - Buttons - Cards 
+def charts():
+    return render_template('charts.html')
 
 def buttons():
     return render_template('buttons.html')
@@ -32,8 +35,9 @@ def buttons():
 def cards():
     return render_template('cards.html')
 
-def forgotpass():
-    return render_template('forgot-password.html')
+
+
+
 
 # Utilities    
 
